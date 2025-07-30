@@ -25,5 +25,3 @@ The quiz features:
 - Responsive layout with mobile-first design
 - Progress bar, answer highlight animations, and result summary cards
 
-## 📁 File Structure
-
