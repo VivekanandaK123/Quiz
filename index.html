@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Quiz Challenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="quiz-header">
+        <h1>🧠 Ultimate Quiz Challenge</h1>
+        <p>Test your knowledge with these fun questions!</p>
+      </header>
+
+      <div class="intro-container" id="introContainer">
+        <div class="intro-content">
+          <h2>Welcome to the Ultimate Quiz Challenge!</h2>
+          <p>
+            Get ready to test your knowledge with 5 exciting questions covering
+            movies, technology, sports, and history.
+          </p>
+          <div class="intro-features">
+            <div class="feature">
+              <span class="feature-icon">🎯</span>
+              <span>5 Fun Questions</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">⚡</span>
+              <span>Instant Feedback</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🏆</span>
+              <span>Track Your Score</span>
+            </div>
+          </div>
+          <button class="start-btn" id="startBtn">Start Quiz</button>
+        </div>
+      </div>
+
+      <div class="quiz-container" id="quizContainer" style="display: none">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="question-counter">
+          <span id="currentQuestion">1</span> of
+          <span id="totalQuestions">5</span>
+        </div>
+
+        <div class="question-container" id="questionContainer">
+          <h2 class="question" id="question"></h2>
+          <div class="options" id="options"></div>
+          <div class="response" id="response"></div>
+          <button class="next-btn" id="nextBtn" style="display: none">
+            Next Question
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="results-container"
+        id="resultsContainer"
+        style="display: none"
+      >
+        <h2>🎉 Quiz Complete!</h2>
+        <div class="score" id="finalScore"></div>
+        <div class="results-summary" id="resultsSummary"></div>
+        <button class="restart-btn" id="restartBtn">Take Quiz Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
